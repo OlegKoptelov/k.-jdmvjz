@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сюрприз для тебя</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Нежно-голубой */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message-box {
+            text-align: center;
+            padding: 40px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d62728; /* Ярко-красный */
+        }
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff69b4; /* Розовый */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <h1>Привет, любимая!</h1>
+        <p id="text">Этот сайт — для тебя. Ты делаешь мой мир ярче каждый день.</p>
+        <button onclick="changeText()">Нажми на меня</button>
+    </div>
+
+    <!-- Подключаем наш JavaScript файл -->
+    <script src="script.js"></script>
+</body>
+</html>
